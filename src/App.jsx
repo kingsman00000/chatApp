@@ -23,9 +23,9 @@ function App() {
     
     setGeneratingAnswer(true);
     const currentQuestion = question;
-    setQuestion(""); // Clear input immediately after sending
+    setQuestion(""); // Clearing the input immediately after sending
     
-    // Add user question to chat history
+    // Adding user question to chat history
     setChatHistory(prev => [...prev, { type: 'question', content: currentQuestion }]);
     
     try {
@@ -59,7 +59,7 @@ function App() {
              rel="noopener noreferrer"
              className="block">
             <h1 className="text-4xl font-bold text-blue-500 hover:text-blue-600 transition-colors">
-              Chat AI
+              Chat App
             </h1>
           </a>
         </header>
@@ -72,7 +72,7 @@ function App() {
           {chatHistory.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-center p-6">
               <div className="bg-blue-50 rounded-xl p-8 max-w-2xl">
-                <h2 className="text-2xl font-bold text-blue-600 mb-4">Welcome to Chat AI! 👋</h2>
+                <h2 className="text-2xl font-bold text-blue-600 mb-4">Welcome to Chat App! 👋</h2>
                 <p className="text-gray-600 mb-4">
                   I'm here to help you with anything you'd like to know. You can ask me about:
                 </p>
